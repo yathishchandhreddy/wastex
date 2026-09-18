@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-obsidian: #F8FAF9;
+  --color-surface-card: #FFFFFF;
+  --color-surface-glass: #FFFFFF;
+  --color-surface-dim: #F1F5F9;
+  --color-surface-container: #FFFFFF;
+  --color-surface-container-low: #F8FAF9;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-high: #E2E8F0;
+  --color-surface-container-highest: #CBD5E1;
+  --color-surface-bright: #FFFFFF;
+  --color-primary: #059669;
+  --color-primary-container: #ECFDF5;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #0284C7;
+  --color-secondary-container: #F0F9FF;
+  --color-tertiary: #D97706;
+  --color-border-hairline: #E2E8F0;
+  --color-border-active: #059669;
+  --color-badge-confidence-high: #059669;
+  --color-badge-confidence-mid: #D97706;
+  --color-badge-confidence-crit: #DC2626;
+  --color-text-dim: #64748B;
+  --color-text-bright: #0F172A;
+  --color-on-surface: #1E293B;
+  --color-on-surface-variant: #475569;
+
+  --font-headline: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-data-metric: "JetBrains Mono", monospace;
+}
+
+@layer utilities {
+  .font-headline-xl {
+    font-family: var(--font-headline);
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+  .font-headline-xl-mobile {
+    font-family: var(--font-headline);
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .font-headline-lg {
+    font-family: var(--font-headline);
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  .font-headline-md {
+    font-family: var(--font-headline);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .font-body-lg {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .font-body-md {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .font-body-sm {
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .font-label-lg {
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+  .font-label-md {
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+  }
+  .font-label-sm {
+    font-family: var(--font-body);
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+  .font-data-metric {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  .px-margin {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .p-space-md {
+    padding: 0.75rem;
+  }
+  .p-space-lg {
+    padding: 1rem;
+  }
+  .p-space-xl {
+    padding: 1.5rem;
+  }
+  .gap-space-xs {
+    gap: 0.25rem;
+  }
+  .gap-space-sm {
+    gap: 0.5rem;
+  }
+  .gap-space-md {
+    gap: 0.75rem;
+  }
+  .gap-space-lg {
+    gap: 1rem;
+  }
+  .gap-space-xl {
+    gap: 1.5rem;
+  }
+  .mt-space-sm {
+    margin-top: 0.5rem;
+  }
+  .mt-space-md {
+    margin-top: 0.75rem;
+  }
+  .pb-space-xl {
+    padding-bottom: 1.5rem;
+  }
+  .pt-space-xs {
+    padding-top: 0.25rem;
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #F8FAF9;
+  color: #1E293B;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
